@@ -21,7 +21,7 @@ struct ContentView: View {
             ScrollView(.vertical, showsIndicators: false, content: {
                 VStack(spacing: 0) {
                     FeaturedTabView()
-                        .frame(width: UIScreen.main.bounds.width, height: 250, alignment: .center)
+                        .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.width / 1.6, alignment: .center)
                         .padding(.vertical)
                     CategoryGridView()
                     TitleView(title: "Helmet")
@@ -31,6 +31,8 @@ struct ContentView: View {
                         }//: LOOP
                     })//: GRID
                     .padding(15)
+                    TitleView(title: "Brands")
+                    BrandGridView()
                     FooterView()
                         .padding(.horizontal)
                 }//: VSTACK
