@@ -24,6 +24,7 @@ struct ContentView: View {
                         .frame(width: UIScreen.main.bounds.width, height: 250, alignment: .center)
                         .padding(.vertical)
                     CategoryGridView()
+                    TitleView(title: "Helmet")
                     FooterView()
                         .padding(.horizontal)
                 }//: VSTACK
